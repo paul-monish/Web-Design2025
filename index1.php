@@ -384,12 +384,35 @@ $y=6;//$GLOBALS['y']=6;
 //     return $c;
 // }
 
-function add(){
-    $z=$GLOBALS['x']+$GLOBALS['y'];
-    echo $z;
-}
+// function add(){
+//     $z=$GLOBALS['x']+$GLOBALS['y'];
+//     echo $z;
+// }
 // $z= add($x,$y);
-add();
+// add();
 // echo $z;
 
+
+// echo readfile("./test.txt");
+
+// $file=fopen("test.txt","r") or die("unable to read file!");
+// $file_size=filesize("test.txt");
+// echo fread($file,$file_size);
+// echo fgetc($file);
+// echo fgets($file);
+
+// while(!feof($file)){
+//     echo fgets($file) ."<br/>";
+// }
+
+// while(!feof($file)){
+//     echo fgetc($file);
+// }
+
+$file=fopen("test1.txt","w") or die("unable to read file!");
+$txt="what are you doing?";
+fwrite($file,$txt);
+
+fwrite($file,$txt);
+fclose($file);
 ?>
